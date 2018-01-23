@@ -25,5 +25,11 @@ group :production do
   gem 'pg', '0.20.0'
 end
 
+group :test do
+  gem 'minitest-reporters', '~> 1.1', '>= 1.1.7'
+  gem 'mini_backtrace',     '0.1.3'
+  gem 'ruby-prof'
+end
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
